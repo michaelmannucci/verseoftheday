@@ -18,7 +18,7 @@ class VerseOfTheDay extends Widget
     {
         $verse = $this->getVerse();
 
-        return view('widgets.verse-of-the-day', ['verse' => $verse]);
+        return view('michaelmannucci::widgets.verse-of-the-day', ['verse' => $verse]);
     }
     /**
      * Get 'votd' from 'biblegateway'.
