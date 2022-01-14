@@ -1,13 +1,14 @@
-## How to install?
+## Installation
 
-Install via the Control Panel or via composer
+Install via composer or the Control Panel
 
 ```bash
 composer require michaelmannucci/verseoftheday
 ```
 
-## How to activate?
-Add this widget to control panel configuration file located in config/statamic/cp.php .
+## Usage
+
+To add the widget to the dashboard, add the following entry to the widgets array in `config/statamic/cp.php`:
 
 ```php
 [
