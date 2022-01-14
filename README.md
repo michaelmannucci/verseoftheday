@@ -15,7 +15,7 @@ Add widget to control panel configuration `config/statamic/cp.php` file.
 e.g:
 ```php
 [
-	'type' => 'verseoftheday',
+	'type' => 'verse_of_the_day',
 	'width' => 100,
 ],
 ```
