@@ -1,9 +1,9 @@
 <?php
 
-namespace michaelmannucci\VerseOfTheDay;
+namespace Michaelmannucci\VerseOfTheDay;
 
 use Statamic\Providers\AddonServiceProvider;
-use michaelmannucci\VerseOfTheDay\Widgets\VerseOfTheDay;
+use Michaelmannucci\VerseOfTheDay\Widgets\VerseOfTheDay;
 
 class ServiceProvider extends AddonServiceProvider
 {
