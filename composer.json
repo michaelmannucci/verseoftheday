@@ -1,0 +1,23 @@
+{
+    "name": "michaelmannucci/verseoftheday",
+    "description": "Displays a daily Bible verse in the Statamic dashboard.",
+    "keywords": ["statamic"],
+    "homepage": "https://github.com/michaelmannucci/verseoftheday",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Michaelmannucci\\VerseOfTheDay\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "VerseOfTheDay",
+            "description": "Displays a daily Bible verse in the Statamic dashboard."
+        },
+        "laravel": {
+            "providers": [
+                "Michaelmannucci\\VerseOfTheDay\\ServiceProvider"
+            ]
+        }
+    }
+}
