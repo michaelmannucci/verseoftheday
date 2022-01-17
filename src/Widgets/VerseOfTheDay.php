@@ -27,20 +27,13 @@ class VerseOfTheDay extends Widget
      */
     protected function getVerse()
     {
-        return Cache::rememberWithExpiration('michaelmannucci-verseoftheday', function () {
-            try {
-                $response = Guzzle::request('GET', 'https://www.biblegateway.com/votd/get/?format=json&version=ESV', [
-                    'headers' => [
-                        'Accept' => 'application/json',
-                    ],
-                ]);
+        $version = $this->config('version', 'NIV');
+        $response = Guzzle::request('GET', "https://www.biblegateway.com/votd/get/?format=json&version=$version", [
+            'headers' => [
+                'Accept' => 'application/json',
+            ],
+        ]);
 
-                $json = json_decode($response->getBody(), true);
-
-                return [120 => $json];
-            } catch (RequestException $e) {
-                return [1 => null];
-            }
-        });
+        return json_decode($response->getBody(), true);
     }
 }
