@@ -1,6 +1,8 @@
-# Statamic Widget: Verse of the Day
+## What is it
 
-## Installation
+A widget that displays a bible verse every day in the Statamic dashboard.
+
+## How to install it
 
 Install via composer or the Control Panel
 
@@ -8,7 +10,7 @@ Install via composer or the Control Panel
 composer require michaelmannucci/verseoftheday
 ```
 
-## Usage
+## How to use it
 
 To add the widget to the dashboard, add the following entry to the widgets array in `config/statamic/cp.php`:
 
@@ -19,7 +21,7 @@ To add the widget to the dashboard, add the following entry to the widgets array
 ],
 ```
 
-## Optional Parameters
+## How to customize it
 
 By default, the widget uses the NIV. You may optionally select the version/language by setting a `version` parameter.
 
