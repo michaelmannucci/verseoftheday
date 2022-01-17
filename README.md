@@ -4,7 +4,7 @@
 
 ## What is it
 
-A widget that displays a bible verse every day in the Statamic dashboard.
+A widget that displays a Bible verse every day in the Statamic dashboard.
 
 ## How to install it
 
