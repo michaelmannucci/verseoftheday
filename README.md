@@ -37,4 +37,6 @@ By default, the widget uses the NIV. You may optionally select the version/langu
 ],
 ```
 
+**Note**: Don't forget to run `php artisan config:cache` after making changes to `config/statamic/cp.php`.
+
 [Click here](https://www.biblegateway.com/versions/) to see a full list of all available versions/languages and their codes.
